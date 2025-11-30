@@ -160,8 +160,6 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
       - WEBUI_PORT=8080
-      - QBT_USERNAME=admin
-      - QBT_PASSWORD=admin
     ports:
       - "8080:8080"
       - "6881:6881"
