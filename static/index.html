@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پول زور بدید!  💰</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="/static/images/gottfrid_svartholm.jpg
+" alt="Donation" class="main-image" onerror="this.style.display='none'">
+            
+            <h1>🎉 پول زور بدید!  🎉</h1>
+            
+            <div class="total-section">
+                <p class="total-label">مجموع کمک‌های دریافتی:</p>
+                <p class="total-amount" id="totalAmount">۰ ریال</p>
+            </div>
+            
+            <div class="donation-form">
+                <label for="amount">مبلغ (ریال):</label>
+                <input type="number" id="amount" placeholder="حداقل ۱۰,۰۰۰ ریال" min="10000" step="1000" value="50000" max="2000000000">
+                
+                <button id="donateBtn" class="donate-btn">💸 پول زور بدید</button>
+            </div>
+            
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
