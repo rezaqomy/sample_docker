@@ -21,6 +21,10 @@ services:
       - "8000:8000"
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/donations
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/donations
+      - ZARINPAL_MERCHANT_ID=c3e6d2e0-5776-4ff0-a511-c0b59692c7cf 
+      - ZARINPAL_SANDBOX=true 
+      - ZARINPAL_CALLBACK_URL=http://{subdomain}-8000.direct.labs.play-with-docker.com/verify
     depends_on:
       postgres:
         condition: service_healthy
